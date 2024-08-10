@@ -1,0 +1,67 @@
+<androidx.cardview.widget.CardView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/msisdn_item"
+                android:text="MSISDN"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iccid_item"
+                android:text="ICCID"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10px"
+            android:layout_marginRight="10px">
+
+        <Button
+                android:id="@+id/remove_subscriber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/projectbuttons"
+                android:onClick="deleteSubsriber"
+                android:text="Remove"
+                android:textColor="#FFFFFF" />
+
+        <Button
+                android:id="@+id/edit_subscriber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/projectbuttons"
+                android:layout_marginLeft="10dp"
+                android:text="Edit"
+                android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>
