@@ -13,7 +13,7 @@ Uses Retrofit and GSON <br/>
 <br/> 
 Make sure to replace the emulator IP private const val BASE_URL = "http://10.0.2.2/" with one of your liking <br/>
 <br/>
-To Login, use Admin/Admin for username and Password <br/>
+To Login, use admin/admin for username and Password <br/>
 
 The fields are : <br/>
 1-MSISDN (Mobile Station International Subscriber Directory Number) <br/>
