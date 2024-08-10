@@ -27,3 +27,18 @@ The fields are : <br/>
 9-Brand <br/>
 10-Model <br/>
 
+To implement the DB run this SQL querry first: <br/>
+ <br/>
+CREATE TABLE subscribers ( <br/> 
+    id INT AUTO_INCREMENT PRIMARY KEY, <br/>
+    msisdn VARCHAR(20) NOT NULL, <br/>
+    iccid VARCHAR(20) NOT NULL, <br/>
+    charging_type ENUM('Prepaid', 'PostPaid') NOT NULL, <br/>
+    sim_profile_id VARCHAR(20) NOT NULL, <br/>
+    service_type VARCHAR(50) NOT NULL, <br/>
+    mvno_name VARCHAR(50), <br/>
+    tariff_code VARCHAR(50), <br/>
+    tac VARCHAR(20), <br/>
+    brand VARCHAR(50), <br/>
+    model VARCHAR(50) <br/>
+);
